@@ -1,0 +1,72 @@
+/*
+        Grid Responsivo:
+        xs={12} para que as colunas ocupem toda a largura em telas pequenas e
+        md={6} para dividir a largura em duas colunas em telas médias e maiores.
+
+*/
+
+.container-hero-section {
+  .description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    max-width: 359px;
+  }
+
+  button.show-button {
+    display: block;
+  }
+
+  .ilustration {
+    max-width: 100%;
+    filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.1));
+  }
+
+  .col-12 {
+    flex: 0 0 auto;
+    width: 50%;
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .container-hero-section {
+    button.show-button {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container-hero-section {
+    margin-top: 40px;
+
+    .description {
+      text-align: center;
+    }
+
+    .row div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .row > div {
+      order: 1;
+    }
+
+    .row > div:last-child {
+      order: -1;
+    }
+
+    .col-12 {
+      flex: 0 0 auto;
+      width: 100%;
+      margin: 25px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

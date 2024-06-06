@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+// Primary
+
+$bright-red: hsl(12, 88%, 59%);
+$dark-blue: hsl(228, 39%, 23%);
+
+// Neutral
+
+$dark-grayish-blue: hsl(227, 12%, 61%);
+$very-dark-blue: hsl(233, 12%, 13%);
+$very-pale-red: hsl(13, 100%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("src/assets/images/bg-tablet-pattern.svg"), url("src/assets/images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right -300px top -200px, left -580px top 1120px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  color: $dark-blue;
+}
+
+:root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1.title-section {
+  line-height: 1.1;
+  font-size: 3.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+  max-width: 441px;
+}
+
+button.btn-started {
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 100px;
+  background-color: $bright-red;
+  border: 1px solid #DC684F;
+  box-shadow: 0 4px 8px 0 rgba(200, 104, 79, 0.2), 0 6px 20px 0 rgba(200, 104, 79, 0.19);
+}
+
+button.btn-started:hover {
+  background-color: #F98F75;
+  border: 1px solid #E79683;
+}
+
+button.btn-started-light {
+  font-weight: 700;
+  color: $bright-red;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 100px;
+  background-color: $very-pale-red;
+  border: 1px solid #DC684F;
+  box-shadow: 0 4px 8px 0 rgba(200, 104, 79, 0.2), 0 6px 20px 0 rgba(200, 104, 79, 0.19);
+}
+
+button.btn-started-light:hover {
+  color: #F98F76;
+  background-color: $very-light-gray;
+  border: 1px solid #E79683;
+}
+
+h2.sub-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  max-width: 325px;
+  text-align: left;
+}
+
+h3.sub-title-features {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+p {
+  color: $dark-grayish-blue;
+}
+
+/**/
+
+@media (max-width: 991px) {
+  h1.title-section {
+    max-width: 423px;
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  h1.title-section {
+    max-width: 441px;
+    font-size: 3.25rem;
+    text-align: center;
+  }
+  h2.sub-title {
+    text-align: center;
+  }
+  /*.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }*/
+}
+
+@media (max-width: 576px) {
+  h1.title-section {
+    max-width: 379px;
+    font-size: 2rem;
+  }
+  h2.sub-title {
+    font-size: 1.8rem;
+  }
+}
+

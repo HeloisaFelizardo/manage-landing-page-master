@@ -1,0 +1,70 @@
+.container-header {
+  a.nav-link {
+    color: var(--dark-blue);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 10px;
+  }
+
+  a.nav-link:hover {
+    color: hsl(227, 12%, 61%);
+  }
+
+  div.navbar-collapse {
+    background-color: transparent;
+  }
+
+  div.menu {
+    position: relative;
+    margin: 20px auto;
+  }
+
+  button.navbar-toggler {
+    background: url('../../assets/images/icon-hamburger.svg') no-repeat center center;
+    border: none;
+    position: relative;
+    right: -20px;
+  }
+
+  button.navbar-toggler.toggled {
+    background: url('../../assets/images/icon-close.svg') no-repeat center center;
+  }
+
+  span.navbar-toggler-icon {
+    background-image: none;
+  }
+
+  button.navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  @media screen and (max-width: 991px) {
+    a.navbar-brand {
+      margin-bottom: 20px;
+    }
+    button.btn-started {
+      display: none;
+    }
+    div.navbar-collapse {
+      background-color: white;
+      border-radius: 3px;
+      box-shadow: 0 150px 400px 200px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+    }
+
+    div.navbar-collapse.collapsing,
+    div.navbar-collapse.collapse {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0);
+    }
+
+    div.navbar-collapse.show {
+      box-shadow: 0 150px 400px 200px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+
+    button.navbar-toggler {
+      margin-bottom: 20px;
+    }
+  }
+}
+
