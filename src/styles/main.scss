@@ -63,6 +63,11 @@ button.btn-started:hover {
   border: 1px solid #E79683;
 }
 
+button.btn-started:active{
+  background-color: $bright-red !important;
+  border: 1px solid #DC684F!important;
+}
+
 button.btn-started-light {
   font-weight: 700;
   color: $bright-red;
@@ -78,6 +83,12 @@ button.btn-started-light:hover {
   color: #F98F76;
   background-color: $very-light-gray;
   border: 1px solid #E79683;
+}
+
+button.btn-started-light:active {
+  color: $bright-red !important;
+  background-color: $very-pale-red !important;
+  border: 1px solid #DC684F !important;
 }
 
 h2.sub-title {
