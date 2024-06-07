@@ -20,7 +20,7 @@
   }
 
   p.description {
-    padding: 0 0 0 84px;
+    padding: 0 30px 0 84px;
   }
 
   h3.sub-title-features {
@@ -57,6 +57,7 @@
 @media (max-width: 767px) {
   .container-features-section {
     padding: 0;
+    margin-top: 70px;
 
     p.intro {
       text-align: center;
