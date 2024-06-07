@@ -14,7 +14,11 @@
   }
 
   .nav-link:hover {
-    color: hsl(12, 88%, 59%)
+    color: hsl(12, 88%, 59%);
+  }
+
+  .nav-link:active {
+    color: hsl(12, 88%, 59%) !important;
   }
 
   .copy {
@@ -37,6 +41,34 @@
     background-color: #F98F75;
     border: 1px solid #E79683;
   }
+
+  .btn-form:active  {
+    background-color: hsl(12, 88%, 59%) !important;
+    border: 1px solid #DC684F !important;
+  }
+
+  .form-control[type="email"]:focus + .btn-form {
+    background-color: #F98F75 !important;
+    border: 1px solid #E79683 !important;
+  }
+
+  /*.btn-primary {
+    --bs-btn-color: #fff !important;
+    --bs-btn-bg: #0d6efd !important;
+    --bs-btn-border-color: #0d6efd !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #0b5ed7 !important;
+    --bs-btn-hover-border-color: #0a58ca !important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #0a58ca !important;
+    --bs-btn-active-border-color: #0a53be !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #fff !important;
+    --bs-btn-disabled-bg: #0d6efd !important;
+    --bs-btn-disabled-border-color: #0d6efd !important;
+  }*/
+
 
   .col-12 {
     text-align: left;
